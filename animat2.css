@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+.container{
+    height:500px;
+    width:500px;
+    border:10px solid rgb(188, 174, 174);
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    height: inherit;
+    width: inherit;
+    transition: all 1s;
+   
+}
+.container .text{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom:0px;
+    
+    color:white;
+   height:250px;
+   padding: 5px;
+   /* width:100px;*/
+line-height: 30px;
+transform: perspective(50px) rotate(180deg);
+transform-origin:bottom;
+transition: all 1.5s;
+}
+.container:hover .text{
+transform: perspective(50px) rotate(0deg);
+}
+.container img:hover{
+    transform: scale(1.5,1.5);
+}

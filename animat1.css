@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.bdN4o2LeGVtxAAvqoroyGQHaEL&pid=Api&P=0&h=180');
+}
+.container{
+    height:500px;
+    width:550px;
+    border:10px solid rgb(238, 13, 13);
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    height: inherit;
+    width: inherit;
+    transition: all 1s;
+   
+}
+.container .text{
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top:0px;
+    right:0px;
+    color:white;
+   height:250px;
+   padding: 10px;
+    /*width:100px;*/
+line-height: 30px;
+transform: perspective(400px) rotate(120deg);
+transform-origin:right;
+transition: all 1s;
+}
+.container:hover .text{
+transform: perspective(400px) rotate(0deg);
+}
+.container img:hover{
+    transform: scale(1.5,1.5);
+}
